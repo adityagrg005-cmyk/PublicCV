@@ -1,0 +1,35 @@
+/* Hero section */
+.hero-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-image-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.hero-photo-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.hero-photo-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
