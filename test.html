@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Gurung</title>
+    <title>Aditya Gurung | Portfolio</title>
     <link rel="stylesheet" href="test2.css">
 </head>
 <body>
-    <img src="photo-1622151834677-70f982c9adef.avif" height="400" width="400" alt="Profile Image">
-    <h1>Aditya Gurung</h1>
-    <h2>Full Stack Development</h2>
-    <div class="project-tags">
-        <span class="tag">React</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">PHP</span>
-        <span class="tag">Python</span>
-        <span class="tag">Node.js</span>
+    <div class="card">
+        <img src="photo-1622151834677-70f982c9adef.avif" class="profile-pic" alt="Profile Image">
+        <h1>Aditya Gurung</h1>
+        <p class="subtitle">Cloud Engineer</p>
+        
+        <hr>
+
+        <div class="project-tags">
+            <span class="tag">REACT</span>
+            <span class="tag">JAVASCRIPT</span>
+            <span class="tag">HTML & CSS</span>
+            <span class="tag">NODE.JS</span>
+        </div>
+
+        <hr>
+
+        <div id="qrcode"></div>
+        <p class="scan-text">SCAN TO CONNECT</p>
     </div>
-    <div id="qrcode"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
     <script>
         var qrcode = new QRCode(document.getElementById("qrcode"), {
-            text: "https://github.com/adityagrg005-cmyk/PublicCV",
-            width: 256,
-            height: 256
+            text: "public-cv-umber.vercel.app",
+            width: 180,
+            height: 180,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
         });
     </script>
 </body>
